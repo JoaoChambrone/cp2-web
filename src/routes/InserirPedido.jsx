@@ -25,7 +25,7 @@ function InserirPedido() {
     /*serve para prevenir o comportamento padrão de um evento */
     e.preventDefault();
     /*puxa tudo que estiver na lista de produtos */
-    ListaProdutos.push(pedido);
+    ListaPedidos.push(pedido);
     navigate('/pedido');
   };
 

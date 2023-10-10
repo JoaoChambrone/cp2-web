@@ -31,7 +31,7 @@ function Nav() {
               <Link to="/cadastrar/produto">Cadastrar Produto</Link>
             </li>
             <li>
-              <Link to="/fazer/pedido">Fazer Pedido</Link>
+              <Link to="/cadastrar/pedido">Fazer Pedido</Link>
             </li>
             <li>
               <Link to="/login">LOGIN</Link>
