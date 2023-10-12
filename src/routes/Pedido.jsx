@@ -1,13 +1,14 @@
 import {} from 'react';
 import { Link } from 'react-router-dom';
 import { ListaPedidos } from '../components/ListaPedidos';
-import { GrFormEdit as EditarPedido } from 'react-icons/gr';
+import { AiOutlineEdit as EditarPedido } from "react-icons/ai";
 import { RiDeleteBin2Fill as ExcluirPedido} from 'react-icons/ri';
+import "../styles/PEPR.scss"
 
 function Pedido() {
   return (
     <section>
-      <h1>PEDIDO</h1>
+      <h1>SEU PEDIDO ATÉ AGORA</h1>
       <div>
         <table>
           <thead>
@@ -15,7 +16,6 @@ function Pedido() {
               <th>ID</th>
               <th>NOME</th>
               <th>DESCRIÇÃO</th>
-              <th>PREÇO</th>
               <th>EDITAR / EXCLUIR</th>
             </tr>
           </thead>
@@ -26,7 +26,6 @@ function Pedido() {
                 <td>{item.id}</td>
                 <td>{item.nome}</td>
                 <td>{item.desc}</td>
-                <td>{item.valor}</td>
                 <td>
                   {' '}
                   {/*Link para chamar a tela de editar produtos */}
@@ -43,6 +42,8 @@ function Pedido() {
             ))}
           </tbody>
         </table>
+        <br />
+        <Link to="/cadastrar/pedido" className='butped'>FAÇA MAIS UM PEDIDO</Link>
       </div>
     </section>
   );

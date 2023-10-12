@@ -1,0 +1,28 @@
+.imgs{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.divlinda{
+    margin-top: 50px;
+    .divlinda2{
+        display: flex;
+        height: 500px;
+        width: 100%;
+    }
+    .divlinda3{
+        display: flex;
+        height: 500px;
+        justify-content: flex-end;
+
+        
+    }
+}
+
+.divlinha{
+    margin: auto;
+}
+

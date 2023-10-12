@@ -1,0 +1,32 @@
+section{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+table{
+    margin: auto;
+    td{
+        padding: 7px;
+        border: 1px solid black;
+
+    }
+}
+
+.butped{
+    background-color: black;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.butped:hover{
+    background-color: rgb(151, 151, 151);
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}

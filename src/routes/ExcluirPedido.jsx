@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { ListaPedidos } from '../components/ListaPedidos';
 
 
-function ExcluirPedido() {
+function Excluir() {
   /*Hooks- useParams e Navigate */
   const { id } = useParams();
   const navigate = useNavigate();
@@ -50,4 +50,4 @@ function ExcluirPedido() {
     </section>
   );
 }
-export default ExcluirPedido;
+export default Excluir;

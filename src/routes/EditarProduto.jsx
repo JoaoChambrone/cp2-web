@@ -2,6 +2,7 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { ListaProdutos } from '../components/ListaProdutos';
 import { useState } from 'react';
+import "../styles/Ip.scss"
 
 function EditarProduto() {
   //Recuperando o ID do produto selecionado com useParams()
@@ -62,6 +63,7 @@ function EditarProduto() {
           </div>
           <div>
             <label htmlFor="idNome">Nome do Produto:</label>
+            <br />
             <input
               type="text"
               name="nome"
@@ -73,6 +75,7 @@ function EditarProduto() {
           </div>
           <div>
             <label htmlFor="idDesc">Descrição do Produto:</label>
+            <br />
             <input
               type="text"
               name="desc"
@@ -84,6 +87,7 @@ function EditarProduto() {
           </div>
           <div>
             <label htmlFor="idValor">Valor do Produto:</label>
+            <br />
             <input
               type="text"
               name="valor"

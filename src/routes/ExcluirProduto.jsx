@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { ListaProdutos } from '../components/ListaProdutos';
 
 
-function ExcluirProduto() {
+function Excluir() {
   /*Hooks- useParams e Navigate */
   const { id } = useParams();
   const navigate = useNavigate();
@@ -50,4 +50,4 @@ function ExcluirProduto() {
     </section>
   );
 }
-export default ExcluirProduto;
+export default Excluir;

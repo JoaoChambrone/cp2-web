@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { ListaPedidos } from '../components/ListaPedidos';
 /* É através dele que se conseguirá fazer a navegação entre as diferentes rotas de uma aplicação. Declaramos ele atribuindo o hook a uma variável e depois invocando-a, passando a rota do destino como parâmetro obrigatório, conforme exemplo: */
 import { useNavigate } from 'react-router-dom';
+import Pedido from './Pedido';
+import "../styles/Ip.scss"
 
 
 function InserirPedido() {
@@ -41,13 +43,16 @@ function InserirPedido() {
 
   return (
     <section>
-      <h1>Cadastro de Pedidos</h1>
+      <h1>O seu pedido</h1>
+      <Pedido />
+      <h1 className='title1'>Cadastro de Pedidos</h1>
       {/*chando a função handleSubmit dentro do form */}
       <form onSubmit={handleSubmit}>
         <fieldset>
           <legend>PEDIDO</legend>
           <p>
-            <label htmlFor="idNome"> Nome do Produto:</label>
+            <label htmlFor="idNome"> Nome do Pedido:</label>
+            <br />
             <input
               type="text"
               name="nome"
@@ -60,6 +65,7 @@ function InserirPedido() {
           </p>
           <p>
             <label htmlFor="idDesc">Descrição Pedido:</label>
+            <br />
             <input
               type="text"
               name="desc"
@@ -71,25 +77,15 @@ function InserirPedido() {
             />
           </p>
           <p>
-            <label htmlFor="idValor"> Valor do Produto:</label>
-            <input
-              type="text"
-              name="valor"
-              id="idValor"
-              
-              value={pedido.valor}
-              /*chamando a função handleChange dentro do input */
-              onChange={handleChange}
-            />
-          </p>
-          <p>
             <button type="submit">
               ADICIONAR PEDIDO
             </button>
           </p>
         </fieldset>
       </form>
+      
     </section>
+    
   );
 }
 

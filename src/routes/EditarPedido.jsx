@@ -2,6 +2,7 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { ListaPedidos } from '../components/ListaPedidos';
 import { useState } from 'react';
+import "../styles/Ip.scss"
 
 function EditarPedido() {
   //Recuperando o ID do produto selecionado com useParams()
@@ -18,7 +19,6 @@ function EditarPedido() {
     id: recPedidoListaById[0].id,
     nome: recPedidoListaById[0].nome,
     desc: recPedidoListaById[0].desc,
-    valor: recPedidoListaById[0].valor,
   });
 
   /*funções */
@@ -62,6 +62,7 @@ function EditarPedido() {
           </div>
           <div>
             <label htmlFor="idNome">Nome do Produto:</label>
+            <br />
             <input
               type="text"
               name="nome"
@@ -73,22 +74,12 @@ function EditarPedido() {
           </div>
           <div>
             <label htmlFor="idDesc">Descrição do Produto:</label>
+            <br />
             <input
               type="text"
               name="desc"
               id="idDesc"
               value={pedido.desc}
-                 /*chamando a função handleChance dentro do input*/
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="idValor">Valor do Produto:</label>
-            <input
-              type="text"
-              name="valor"
-              id="idValor"
-              value={pedido.valor}
                  /*chamando a função handleChance dentro do input*/
               onChange={handleChange}
             />

@@ -12,7 +12,7 @@ import ExcluirProduto from './routes/ExcluirProduto.jsx';
 import InserirPedido from './routes/InserirPedido.jsx';
 import EditarPedido from './routes/EditarPedido.jsx';
 import ExcluirPedido from './routes/ExcluirPedido.jsx';
-import Conteudo from './routes/Conteudo.jsx';
+import Sobre from './routes/Sobre.jsx';
 import Login from './routes/Login.jsx';
 
 
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       { path: '/login', element: <Login/> },
       { path: '/produtos', element: <Produtos /> },
       { path: '/pedido', element: <Pedido /> },
-      { path: '/conteudo', element: <Conteudo /> },
+      { path: '/sobre', element: <Sobre /> },
       { path: '/cadastrar/produto', element: <InserirProduto /> },
       /*criando a rota editar produtos e passando o id do produto */
       { path: '/editar/produtos/:id', element: <EditarProduto /> },

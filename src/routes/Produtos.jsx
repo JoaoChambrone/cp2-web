@@ -1,8 +1,9 @@
 import {} from 'react';
 import { Link } from 'react-router-dom';
 import { ListaProdutos } from '../components/ListaProdutos';
-import { GrFormEdit as EditarProduto } from 'react-icons/gr';
+import { AiOutlineEdit as EditarProduto } from "react-icons/ai";
 import { RiDeleteBin2Fill as ExcluirProduto } from 'react-icons/ri';
+import "../styles/PEPR.scss"
 
 function Produtos() {
   return (

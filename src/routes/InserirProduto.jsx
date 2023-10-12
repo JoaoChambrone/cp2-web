@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { ListaProdutos } from '../components/ListaProdutos';
 /* É através dele que se conseguirá fazer a navegação entre as diferentes rotas de uma aplicação. Declaramos ele atribuindo o hook a uma variável e depois invocando-a, passando a rota do destino como parâmetro obrigatório, conforme exemplo: */
 import { useNavigate } from 'react-router-dom';
+import Produtos from './Produtos';
+import "../styles/Ip.scss"
 
 
 function InserirProduto() {
@@ -41,13 +43,16 @@ function InserirProduto() {
 
   return (
     <section>
-      <h1>Cadastro de Produtos</h1>
+      <h1>NOSSOS PRODUTOS</h1>
+      <Produtos />
+      <h1 className='title1'>CADASTRO DE PRODUTOS</h1>
       {/*chando a função handleSubmit dentro do form */}
       <form onSubmit={handleSubmit}>
         <fieldset>
           <legend>PRODUTO</legend>
           <p>
             <label htmlFor="idNome"> Nome do Produto:</label>
+            <br />
             <input
               type="text"
               name="nome"
@@ -60,6 +65,7 @@ function InserirProduto() {
           </p>
           <p>
             <label htmlFor="idDesc">Descrição Produto:</label>
+            <br />
             <input
               type="text"
               name="desc"
@@ -72,6 +78,7 @@ function InserirProduto() {
           </p>
           <p>
             <label htmlFor="idValor"> Valor do Produto:</label>
+            <br />
             <input
               type="text"
               name="valor"

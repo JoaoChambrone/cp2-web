@@ -1,5 +1,6 @@
 import {} from 'react';
 import { Link,useNavigate } from 'react-router-dom';
+import "../styles/Nav.scss"
 
 function Nav() {
   
@@ -17,26 +18,24 @@ function Nav() {
   return (
     <>
       <header>
-        <h2>Projeto</h2>
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
-            </li>
-        
-            <li>
-              <Link to="conteudo">Conteudo</Link>
+              <Link to="/" className='adoh'>HOME</Link>
             </li>
             <li>
-              <Link to="/cadastrar/produto">Cadastrar Produto</Link>
+              <Link to="/cadastrar/produto" className='adoh'>PRODUTOS</Link>
             </li>
             <li>
-              <Link to="/cadastrar/pedido">Fazer Pedido</Link>
+              <Link to="/cadastrar/pedido" className='adoh'>FAÇA SEU PEDIDO</Link>
             </li>
             <li>
-              <Link to="/login">LOGIN</Link>
+              <Link to="/sobre" className='adoh'>SOBRE</Link>
             </li>
-            <button onClick={handleLogout}>Logout</button>
+            <li>
+              <Link to="/login" className='adoh'>LOGIN</Link>
+            </li>
+            <button onClick={handleLogout}>LOGOUT</button>
           </ul>
         </nav>
       </header>
